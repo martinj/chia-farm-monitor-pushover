@@ -1,0 +1,31 @@
+{
+  "name": "chia-farm-monitor-pushover",
+  "version": "0.0.1",
+  "description": "monitor chia farm status and send notifications to pushover",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+  "bin": {
+    "chia-monitor-pushover": "./bin/monitor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:martinj/chia-farm-monitor-pushover.git"
+  },
+  "keywords": [
+    "chia"
+  ],
+  "author": "Martin Jonsson <martin.jonsson@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@aptoma/eslint-config": "^7.0.1",
+    "eslint": "^7.26.0"
+  },
+  "dependencies": {
+    "chia-farm-monitor": "0.0.1",
+    "minimist": "^1.2.5",
+    "pushover-notifications": "^1.2.2"
+  }
+}
