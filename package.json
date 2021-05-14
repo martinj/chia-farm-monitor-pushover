@@ -1,6 +1,6 @@
 {
   "name": "chia-farm-monitor-pushover",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "monitor chia farm status and send notifications to pushover",
   "main": "index.js",
   "scripts": {
