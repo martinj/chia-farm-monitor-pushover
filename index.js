@@ -10,7 +10,7 @@ function start(chia, user, token, interval = 60000, errorBackOffFactor = 2, logF
 	mon.on('farmError', (msg) => report(api, msg, logFn));
 	mon.on('farmRestored', () => report(api, 'Farm has recovered from previous error', logFn));
 	mon.on('error', async (err) => report(api, `Monitor error: ${err.message}`, logFn));
-
+	mon.on('farmOk', () => logFn && logFn('Farm is ok'));
 	mon.start();
 }
 
